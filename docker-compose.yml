@@ -1,0 +1,9 @@
+services:
+  react_app:
+    build:
+      context: ./react_app
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    env_file:
+      - ./react_app/.env
